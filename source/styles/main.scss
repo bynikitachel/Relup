@@ -1,0 +1,49 @@
+@import './fonts.scss';
+@import './constants.scss';
+@import './mixins.scss';
+@import './navbar.scss';
+@import './home-section.scss';
+@import './services-section.scss';
+@import './statistic-section.scss';
+// @import './buttom.scss';
+// @import './carousel.scss';
+// @import './free-delivery-section.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+.background-color-image {
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  position: relative;
+}
+.background-phone-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container {
+  width: 81.25% !important; 
+  padding: 0 !important;
+}
+.second-heading {
+  font-size: 56px;
+  line-height: 64px;
+  color: #333;
+  font-weight: bold;
+}
+.description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.transp-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  opacity: 0.5;
+}

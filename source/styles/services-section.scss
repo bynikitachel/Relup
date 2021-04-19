@@ -1,0 +1,43 @@
+.services-section {
+    background: $white;
+    padding-bottom: 64px;
+    .container {
+        @include flex-column;
+        align-items: center;
+        .second-heading {
+            margin: 55px 0 23px;
+        }
+        .description {
+            width: 50%;
+            text-align: center;
+        }
+        .service-cards-container {
+            @include flex-row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .service-cards-item {
+                width: 30%;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #FFFFFF;
+                box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+                border-radius: 3px;
+                margin-top: 32px;
+                .third-heading {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    margin: 13px 0 9px;
+                }
+                .transp-description {
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

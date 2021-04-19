@@ -1,0 +1,30 @@
+.navbar {
+    padding: 15px 0 !important;
+    .container {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        .nav-title-container {
+            width: 80%;
+            justify-content: flex-end;
+            display: flex;
+            ul {
+                width: 100%;
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: $white;
+            }
+            .nav-buttons-container {
+                .search {
+                    margin: 0 32px 0 56px;
+                }
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    background: #5927a5cc;
+}

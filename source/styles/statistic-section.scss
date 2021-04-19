@@ -1,0 +1,48 @@
+.statistic-section {
+    background: #FDF2FF;
+    padding: 144px 0 112px;
+    .container {
+        @media (max-width: 767px) {
+            @include flex-column;
+        }
+        .statistic-image-background {
+            background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+            border-radius: 3px;
+            position: relative;
+            // display: inline;
+            min-width: 570px;
+            height: 512px;
+            // flex: 1;
+            .statistic-image{
+                position: absolute;
+                // bottom: 32px;
+                // left: 30px;
+                left:5%;
+                bottom:5%;
+                width: 100%;
+            }
+        }
+        .statistic-description-container {
+            // flex: 1;
+            padding-left: 130px;
+            .description {
+                margin: 23px 0 6px;
+            }
+            .indicators-container {
+                @include flex-row;
+                margin: 26px 0 40px;
+                .indicators-item {
+                    .count {
+                        font-weight: bold;
+                        font-size: 40px;
+                        line-height: 48px;
+                        color: #333333;
+                    }
+                }
+            }
+            .primary-button {
+                margin: 0;
+            }
+        }
+    }
+}
