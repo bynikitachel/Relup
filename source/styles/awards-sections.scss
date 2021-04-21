@@ -1,0 +1,24 @@
+.awards-section {
+    .container {
+        @include flex-row;
+        align-items: center;
+        .awards-description {
+            margin-right: 183px;
+            .description {
+                margin: 23px 0 54px;
+            }
+            .awards-items-container {
+                .awards-item {
+                    width: 45%;
+                    .transp-description {
+                        margin-bottom: 32px
+                    }
+                }
+                .awards-line-container {
+                    @include flex-row;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
