@@ -7,7 +7,13 @@
 @import './statistic-section.scss';
 @import './awards-section.scss';
 @import './offers-section.scss';
+@import './reviews-section.scss';
 @import './veritatis-section.scss';
+@import './help-section.scss';
+@import './news-section.scss';
+@import './contacts-section.scss';
+@import './footer.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -49,6 +55,14 @@
     font-size: 16px;
     line-height: 24px;
     color: #333;
+}
+.description-small {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 13px;
 }
 
 .transp-description {

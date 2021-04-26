@@ -1,0 +1,25 @@
+.news-section {
+    background: #FDF2FF;
+    .container {
+        padding: 55px 0 96px !important;
+        .second-heading {
+            margin-bottom: 57px;
+        }
+        .news-items-container {
+            @include flex-row;
+            justify-content: space-between;
+            .news-item {
+                width: 370px;
+                // height: 240px;
+                background: $white;
+                .news-description {
+                    background: $white;
+                    padding: 32px 32px 50px 32px;
+                    .third-heading {
+                        margin: 13px 0 25px;
+                    }
+                }
+            }
+        }
+    }
+}

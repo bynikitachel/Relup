@@ -1,18 +1,53 @@
 .veritatis-section {
+    background: #FDF2FF;
+    padding: 63px 0 112px;
     .container {
+        .veritatis-container {
+            margin-bottom: 65px;
+            @include flex-row;
+            align-items: center;
+            justify-content: space-between;
+            .transp-description {
+                width: 35%;
+            }
+            .primary-button {
+                border: 1px solid #C86DD7;
+                background: $white;
+                color: #C86DD7;
+                margin: 0;
+            }
+        }
         .veritatis-image-container {
             @include flex-row;
+            justify-content: space-between;
+            .veritatis-image-first, .veritatis-image-second, .veritatis-image-third {
+                padding-left: 32px;
+                @include flex-column;
+                justify-content: flex-end;
+                .third-heading {
+                    margin-bottom: 11px;
+                    width: 60%;
+                    color: $white;
+                }
+                .description {
+                    margin-bottom: 40px;
+                    color: $white;
+                }
+            }
             .veritatis-image-first {
-                // flex: 2;
-                background: no-repeat url('./img/Bitmap (2).png');
-                width: 100%;
-                height: 100%;
+                background: no-repeat url('../img/Bitmap(2).png');
+                width: 570px;
+                height: 464px;
             }
             .veritatis-image-second {
-                // flex: 1;
+                background: no-repeat url('../img/Bitmap (1).png');
+                width: 270px;
+                height: 464px;
             }
             .veritatis-image-third {
-                // flex: 1;
+                background: no-repeat url('../img/Bitmap (3).png');
+                width: 270px;
+                height: 464px;
             }
         }
     }
