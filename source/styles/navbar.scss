@@ -2,12 +2,12 @@
     padding: 15px 0 !important;
     .container {
         padding: 0;
-        display: flex;
+        @include flex-row;
         align-items: center;
         .nav-title-container {
             width: 80%;
             justify-content: flex-end;
-            display: flex;
+            @include flex-row;
             ul {
                 width: 100%;
                 display: flex;
@@ -18,11 +18,14 @@
                 color: $white;
             }
             .nav-buttons-container {
+                @include flex-row;
                 .search {
                     margin: 0 32px 0 56px;
                 }
-                display: flex;
-                flex-direction: row;
+                .burger {
+                    width: 24px;
+                    height: 20px;
+                }
             }
         }
     }

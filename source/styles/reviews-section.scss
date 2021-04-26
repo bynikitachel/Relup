@@ -9,17 +9,22 @@
             text-align: center;
         }
         .carousel-inner {
-            .reviews-users-container {
-                @include flex-row;
-                .review-user-first, .review-user-second {
-                    border-radius: 3px;
-                    flex: 1;
-                    @include flex-column;
-                    align-items: center;
-                    padding: 48px 32px 59px;
-                    .transp-description {
-                        margin: 18px 0 13px;
-                        text-align: center;
+            overflow: visible;
+            .reviews-users-containers {
+                overflow: visible;
+                .reviews-users-container {
+                    @include flex-row;
+                    .review-user-first,
+                    .review-user-second {
+                        border-radius: 3px;
+                        flex: 1;
+                        @include flex-column;
+                        align-items: center;
+                        padding: 48px 32px 59px;
+                        .transp-description {
+                            margin: 18px 0 13px;
+                            text-align: center;
+                        }
                     }
                 }
                 .review-user-first {
@@ -41,7 +46,7 @@
                 }
                 .review-user-second {
                     background: #FFFFFF;
-                    box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+                    box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678) !important;
                     .review-user-avatar {
                         width: 124px;
                         height: 124px;
@@ -51,22 +56,17 @@
                 }
             }
         }
-        .carousel-control-prev, .carousel-control-next {
+        .carousel-control-prev,
+        .carousel-control-next {
             position: static;
+            width: auto !important;
         }
         .reviews-button-container {
             width: 100%;
             @include flex-row;
             justify-content: center;
             margin-top: 48px;
-            .carousel-control-prev-icon {
-                width: 48px;
-                height: 48px;
-                border: 1px solid #C86DD7;
-                box-sizing: border-box;
-                border-radius: 24px;
-                background: $white;
-            }
+            .carousel-control-prev-icon,
             .carousel-control-next-icon {
                 width: 48px;
                 height: 48px;
@@ -74,7 +74,15 @@
                 box-sizing: border-box;
                 border-radius: 24px;
                 background: $white;
-                
+                @include flex-row;
+                justify-content: center;
+                align-items: center;
+                .carousel-control-next-icon-img {
+                    transform: scale(-1, -1);
+                }
+            }
+            .carousel-control-prev-icon {
+                margin-right: 8px;
             }
         }
     }
