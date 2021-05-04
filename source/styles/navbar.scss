@@ -31,3 +31,16 @@
     }
     background: #5927a5cc;
 }
+
+@media (max-width: 375px) {
+    .navbar {
+        .container {
+            .nav-title-container {
+                ul {
+                    display: none !important;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

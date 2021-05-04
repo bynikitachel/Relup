@@ -5,32 +5,32 @@
         @include flex-row;
         .static-image-container {
             .statistic-image-background {
-                background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
+                // background: linear-gradient(224.72deg, #3023ae -1%, #c86dd7 100.5%);
                 border-radius: 3px;
-                position: relative;
+                // position: relative;
                 // display: inline;
-                min-width: 570px;
-                height: 512px;
+                // min-width: 570px;
+                // height: 512px;
                 width: 100%;
-                // flex: 1;
+                flex: 1;
                 .statistic-image {
-                    width: 570px;
-                    height: 521px;
+                    width: 100px;
+                    box-shadow: -30px 30px 1px #333333;
                     //   background: url("../img/Bitmap.jpg") no-repeat center;
-                    background-size: cover;
-                    position: absolute;
+                    // background-size: cover;
+                    // position: absolute;
                     // bottom: 32px;
                     // left: 30px;
-                    left: 5%;
-                    bottom: 5%;
+                    // left: 5%;
+                    // bottom: 5%;
                     width: 100%;
                     border-radius: 3px;
-                    width: inherit;
+                    // width: inherit;
                 }
             }
         }
         .statistic-description-container {
-            // flex: 1;
+            flex: 1;
             padding-left: 130px;
             .description {
                 margin: 23px 0 6px;
@@ -51,6 +51,29 @@
             .primary-button {
                 margin: 0;
                 background: #c86dd7;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .statistic-section {
+        padding: 64px 0 48px;
+        .container {
+            flex-direction: column;
+            .static-image-container {
+                .statistic-image-background {
+                    @include flex-row;
+                    justify-content: flex-end;
+                    .statistic-image {
+                        box-shadow: -18px 18px 1px #333333;
+                        width: 95%;
+                    }
+                }
+            }
+            .statistic-description-container {
+                padding-left: 0px;
+                margin-top: 66px;
             }
         }
     }

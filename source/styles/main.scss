@@ -13,7 +13,6 @@
 @import './news-section.scss';
 @import './contacts-section.scss';
 @import './footer.scss';
-
 * {
     margin: 0;
     padding: 0;
@@ -56,6 +55,7 @@
     line-height: 24px;
     color: #333;
 }
+
 .description-small {
     font-weight: bold;
     font-size: 12px;
@@ -70,4 +70,15 @@
     line-height: 24px;
     color: #333333;
     opacity: 0.5;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 90% !important;
+        padding: 0 !important;
+    }
+    .second-heading {
+        font-size: 40px;
+        line-height: 48px;
+    }
 }

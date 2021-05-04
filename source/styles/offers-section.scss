@@ -64,3 +64,24 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .offers-section {
+        padding: 54px 0 80px;
+        .container {
+            .description {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .offers-cost-container {
+                @include flex-column;
+                .offer-cost-item,
+                .main-offer-cost-item {
+                    width: 100%;
+                    padding: 53px 88px 48px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}

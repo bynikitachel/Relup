@@ -38,3 +38,24 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .services-section {
+        .container {
+            .second-heading {
+                margin: 38px 0 24px;
+                width: 50%;
+            }
+            .description {
+                width: auto;
+            }
+            .service-cards-container {
+                flex-direction: column !important;
+                .service-cards-item {
+                    width: 100%;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}

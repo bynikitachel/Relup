@@ -9,10 +9,10 @@
             }
             .awards-items-container {
                 .awards-item {
+                    width: 45%;
                     .third-heading {
                         margin: 7px 0 9px;
                     }
-                    width: 45%;
                     .transp-description {
                         margin-bottom: 32px
                     }
@@ -20,6 +20,31 @@
                 .awards-line-container {
                     @include flex-row;
                     justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .awards-section {
+        .container {
+            @include flex-column;
+            .awards-description {
+                margin-right: 0px;
+                .second-heading {
+                    margin: 54px 0 24px;
+                }
+                .awards-items-container {
+                    .awards-line-container {
+                        @include flex-column;
+                        .awards-item {
+                            width: 100%;
+                            .transp-description {
+                                width: 85%;
+                            }
+                        }
+                    }
                 }
             }
         }

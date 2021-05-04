@@ -87,3 +87,22 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .reviews-section {
+        .container {
+            .carousel-inner {
+                .carousel-item.active {
+                    .review-user-second {
+                        display: none;
+                    }
+                }
+                .carousel-item {
+                    .review-user-first {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
